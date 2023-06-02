@@ -1,5 +1,10 @@
-import { Layout } from '../../components';
+import { HomeTemplate } from '../../library/templates/index';
+import { Layout } from '../../library/components';
 
 export function HomePage() {
-  return <Layout>Home Page</Layout>;
+  return (
+    <Layout>
+      <HomeTemplate />
+    </Layout>
+  );
 }

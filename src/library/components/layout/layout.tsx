@@ -3,5 +3,9 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
-  return <div className='w-screen h-screen'>{children}</div>;
+  return (
+    <div id='layout' className='relative w-screen h-screen'>
+      {children}
+    </div>
+  );
 }
