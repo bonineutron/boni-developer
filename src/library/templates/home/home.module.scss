@@ -1,5 +1,15 @@
-:global {
-  .test {
-    color: red;
-  }
+.card_1 {
+  filter: blur(5px);
+  transition: all 0.8s;
+}
+.transitionCard_1 {
+  filter: blur(0px);
+}
+
+.card_2 {
+  filter: blur(5px);
+  transition: all 0.8s;
+}
+.transitionCard_2 {
+  filter: blur(0px);
 }
