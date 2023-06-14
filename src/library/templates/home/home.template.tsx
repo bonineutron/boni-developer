@@ -1,13 +1,14 @@
 import { ICard } from '../../../shared/interfaces/home.interfaces';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { useState, useEffect, useRef } from 'react';
+import { Backgroundtransition, BusinessCard } from '../../components';
 import styles from './home.module.scss';
 
 export function HomeTemplate() {
   // configuration
+  const licenseKey: string = import.meta.env.VITE_LICENSE_KEY;
   const refCard_1 = useRef<HTMLDivElement>(null);
   const refCard_2 = useRef<HTMLDivElement>(null);
-  const licenseKey: string = import.meta.env.VITE_LICENSE_KEY;
 
   // refactor
   const references: ICard[] = [
@@ -22,7 +23,6 @@ export function HomeTemplate() {
       cleanTransition: () => setTransitionCard_2('')
     }
   ];
-  const classContentCards: string = 'h-full flex justify-center items-center gap-10';
 
   // states
   const [transitionCard_1, setTransitionCard_1] = useState<string>('');
@@ -31,7 +31,6 @@ export function HomeTemplate() {
   // effects
   useEffect(() => {
     const observers: IntersectionObserver[] = references.map((reference: ICard) => createObserver(reference));
-
     return () => {
       observers.forEach((observer: IntersectionObserver) => observer.disconnect());
     };
@@ -57,43 +56,31 @@ export function HomeTemplate() {
   };
 
   return (
-    <div id='home-template' className='h-full flex justify-center items-center'>
-      <ReactFullpage
-        scrollingSpeed={200}
-        licenseKey={licenseKey}
-        render={() => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className='section'>
-                <div
-                  className={`w-[90%] h-[500px] bg-white/40 backdrop-blur-xl rounded-xl mx-auto ${styles.card_1} ${transitionCard_1}`}>
-                  <div className={classContentCards}>
-                    <div ref={refCard_1}>Titulo Prueba 1</div>
-                    <img
-                      src='https://images.unsplash.com/photo-1685433339650-74938cc6bfe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
-                      alt='img_1'
-                      className='w-[100px] rounded-lg'
-                    />
+    <div id='home-template' className='h-full flex items-center'>
+      <img src='/images/boni-dev-md.svg' alt='logo' className='mx-auto w-[200px]' />
+      <Backgroundtransition />
+      {/* <div className='h-full'>
+        <ReactFullpage
+          scrollingSpeed={800}
+          licenseKey={licenseKey}
+          render={() => {
+            return (
+              <ReactFullpage.Wrapper>
+                <div className='section'>
+                  <div ref={refCard_1} className={`${styles.card_1} ${transitionCard_1}`}>
+                    <BusinessCard />
                   </div>
                 </div>
-              </div>
-              <div className='section'>
-                <div
-                  className={`w-[90%] h-[500px] bg-white/40 backdrop-blur-xl rounded-xl mx-auto ${styles.card_2} ${transitionCard_2}`}>
-                  <div className={classContentCards}>
-                    <div ref={refCard_2}>Titulo Prueba 2</div>
-                    <img
-                      src='https://plus.unsplash.com/premium_photo-1684315352401-062806d5d9ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
-                      alt='img_2'
-                      className='w-[100px] rounded-lg'
-                    />
+                <div className='section'>
+                  <div ref={refCard_2} className={`${styles.card_2} ${transitionCard_2}`}>
+                    <BusinessCard />
                   </div>
                 </div>
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
+              </ReactFullpage.Wrapper>
+            );
+          }}
+        />
+      </div> */}
     </div>
   );
 }
