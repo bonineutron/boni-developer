@@ -25,15 +25,15 @@ export function Backgroundtransition() {
     <>
       <div
         ref={background_1}
-        className='absolute h-full w-[0%] bg-[#bbdefb] drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 ease-out'
+        className='absolute h-full w-[0%] bg-[#bbdefb] shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 ease-out'
       />
       <div
         ref={background_2}
-        className='absolute h-full w-[0%] bg-[#64b5f6] drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 delay-500 ease-out'
+        className='absolute h-full w-[0%] bg-[#64b5f6] shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 delay-500 ease-out'
       />
       <div
         ref={background_3}
-        className='absolute h-full w-[0%] bg-[#e3f2fd] drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 delay-1000 ease-out'
+        className='absolute h-full w-[0%] bg-[#e3f2fd] shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-500 delay-1000 ease-out'
       />
     </>
   );
