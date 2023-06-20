@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --primary-color: #1e88e5;
+  --white-boni: #f8f9fa;
+  --black-boni: #495057;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +17,5 @@ body {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background: #e3f2fd;
+  color: var(--black-boni);
 }
