@@ -10,7 +10,7 @@ export function BusinessCard() {
         <img
           src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'
           alt='photo'
-          className='w-[50%] rounded-md'
+          className='w-[50%] rounded-lg'
         />
         <div className='w-full flex flex-col justify-between font-medium text-[16px]'>
           <div>

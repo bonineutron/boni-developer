@@ -16,7 +16,7 @@ export function LowBar(): JSX.Element {
       className={`fixed h-[80px] w-full bg-white-boni bottom-[-80px] shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all duration-[500ms] delay-[1600ms] ${
         transition ? 'bottom-[0px]' : ''
       }`}>
-      <div className='flex h-full w-[70%] items-center mx-auto justify-between text-[30px] text-primary-color'>
+      <div className='flex h-full w-[70%] items-center mx-auto justify-between text-[30px] text-black-boni'>
         <a href='https://www.linkedin.com/in/bonineutron/' target='_blank' className='h-full flex items-center'>
           <BsLinkedin />
         </a>
