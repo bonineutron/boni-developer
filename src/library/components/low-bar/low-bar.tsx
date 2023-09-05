@@ -1,9 +1,12 @@
-import { RiMailSendFill, RiWhatsappFill } from 'react-icons/ri';
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { useState, useEffect } from 'react';
 import { LanguageModal } from '../modal/all-modals';
+import { useTranslation } from 'react-i18next';
+import { HiLanguage } from 'react-icons/hi2';
+import { useState } from 'react';
 
 export function LowBar(): JSX.Element {
+  // configuration
+  const { t } = useTranslation();
+
   // states
   const [showLanguageModal, setShowLanguageModal] = useState<boolean>(false);
 
@@ -12,15 +15,11 @@ export function LowBar(): JSX.Element {
       <div className='h-full w-full flex justify-evenly'>
         <button
           onClick={() => setShowLanguageModal(true)}
-          className='custom-button bg-white text-black flex items-center gap-[10px]'>
-          <img
-            src='/images/language/spanish.image.jpg'
-            alt='spanish-image'
-            className='h-[30px] w-[30px] rounded-full'
-          />
-          <span>ES</span>
+          className='custom-button bg-white text-black flex items-center gap-[5px]'>
+          <HiLanguage className='text-[22px]' />
+          <span>{t('lowBar.language')}</span>
         </button>
-        <button className='custom-button'>Contacto</button>
+        <button className='custom-button'>{t('lowBar.contact')}</button>
       </div>
       {showLanguageModal && <LanguageModal closeClick={setShowLanguageModal} />}
     </div>

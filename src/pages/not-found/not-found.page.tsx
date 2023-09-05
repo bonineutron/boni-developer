@@ -7,7 +7,7 @@ export function NotFoundPage() {
 
   // effects
   useEffect(() => {
-    navigate('/');
+    navigate('/es');
   }, []);
 
   return <></>;

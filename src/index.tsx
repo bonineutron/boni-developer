@@ -1,3 +1,4 @@
+import './shared/services/languages/language.service';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import React from 'react';

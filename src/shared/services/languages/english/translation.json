@@ -1,0 +1,13 @@
+{
+  "lowBar": {
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "modal": {
+    "close": "Close"
+  },
+  "languageModal": {
+    "spanish": "Spanish",
+    "english": "English"
+  }
+}

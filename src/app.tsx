@@ -7,7 +7,7 @@ export default function Router(): JSX.Element {
       {/* configuration */}
       <Route path='*' element={<NotFoundPage />} />
       {/* pages */}
-      <Route path='/' element={<HomePage />} />
+      <Route path='/:language' element={<HomePage />} />
     </Routes>
   );
 }

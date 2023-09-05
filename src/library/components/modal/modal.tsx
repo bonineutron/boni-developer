@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { VscClose } from 'react-icons/vsc';
 import { useRef, useEffect } from 'react';
 
@@ -9,6 +10,7 @@ interface ModalProps {
 export function Modal({ children, closeClick }: ModalProps): JSX.Element {
   // configuration
   const transitionContainer = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   // effects
   useEffect(() => {
@@ -27,7 +29,7 @@ export function Modal({ children, closeClick }: ModalProps): JSX.Element {
       <button
         onClick={() => closeClick(false)}
         className='absolute bottom-[70px] text-[18px] font-medium italic flex items-center'>
-        <span>Cerrar</span>
+        <span>{t('modal.close')}</span>
         <VscClose className='text-[30px]' />
       </button>
     </div>
