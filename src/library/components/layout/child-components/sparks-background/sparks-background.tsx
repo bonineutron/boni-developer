@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export function SparksBackground(): JSX.Element {
   // configuration
-  const backgroundBlur = useRef<HTMLDivElement>(null);
+  const transitionContainer = useRef<HTMLDivElement>(null);
 
   // states
   const [showSparks, setShowSparks] = useState<boolean>(false);
@@ -11,8 +11,8 @@ export function SparksBackground(): JSX.Element {
   // effects
   useEffect(() => {
     setTimeout(() => {
-      if (backgroundBlur.current) {
-        backgroundBlur.current.classList.add('!blur-[100px]');
+      if (transitionContainer.current) {
+        transitionContainer.current.classList.add('blur-[120px]');
       }
     });
     setTimeout(() => {
@@ -22,8 +22,8 @@ export function SparksBackground(): JSX.Element {
 
   return (
     <div
-      ref={backgroundBlur}
-      className='absolute top-0 left-0 h-full w-full bg-white/80 flex justify-center items-center transition-all duration-[2000ms] delay-1000'>
+      ref={transitionContainer}
+      className='absolute top-0 h-full w-full bg-white flex justify-center items-center transition-all duration-[2000ms] delay-1000'>
       <img src='/images/boni-dev-md.svg' alt='logo' className='absolute w-[180px]' />
       {showSparks && (
         <>

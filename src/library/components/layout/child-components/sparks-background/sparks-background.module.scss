@@ -1,8 +1,10 @@
+// global
 @keyframes sparkAnimation {
   50% {
     height: 100vw;
     width: 100vw;
   }
+
   100% {
     height: 0vw;
     width: 0vw;
@@ -37,7 +39,6 @@
 }
 
 // styles elements
-
 .spark1 {
   @extend .sparkContainer;
   top: 20%;
