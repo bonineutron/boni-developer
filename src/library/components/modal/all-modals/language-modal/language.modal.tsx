@@ -27,7 +27,7 @@ export function LanguageModal({ closeClick }: LanguageModalProps): JSX.Element {
           }}
           className={optionLeguage}>
           <img
-            src='/images/language/spanish.image.jpg'
+            src='/images/language/spanish.image.svg'
             alt='spanish-image'
             className='h-[30px] w-[30px] rounded-full'
           />
@@ -39,7 +39,7 @@ export function LanguageModal({ closeClick }: LanguageModalProps): JSX.Element {
           }}
           className={optionLeguage}>
           <img
-            src='/images/language/english.image.jpg'
+            src='/images/language/english.image.svg'
             alt='spanish-image'
             className='h-[30px] w-[30px] rounded-full'
           />
