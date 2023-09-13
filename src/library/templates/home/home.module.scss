@@ -1,0 +1,15 @@
+:global {
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0 !important;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .swiper-pagination-bullet-active {
+    background: #000000 !important;
+  }
+}

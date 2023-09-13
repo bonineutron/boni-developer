@@ -24,7 +24,7 @@ export function Modal({ children, closeClick }: ModalProps): JSX.Element {
   return (
     <div
       ref={transitionContainer}
-      className='absolute bottom-0 h-[100dvh] w-full flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-[1000ms]'>
+      className='absolute bottom-0 h-[100dvh] w-full flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-[1000ms] z-[10]'>
       {children}
       <button
         onClick={() => closeClick(false)}
