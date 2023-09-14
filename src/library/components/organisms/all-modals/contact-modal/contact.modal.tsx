@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { RiMailSendFill } from 'react-icons/ri';
-import { Modal } from '../../modal';
+import { Modal } from '../../../../components';
 
 interface ContactModalProps {
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;

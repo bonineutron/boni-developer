@@ -1,6 +1,6 @@
-import { ELanguage } from '../../../../../shared/enums/language.enum';
+import { ELanguage } from '../../../../../shared/enums';
 import { useTranslation } from 'react-i18next';
-import { Modal } from '../../modal';
+import { Modal } from '../../../../components';
 
 interface LanguageModalProps {
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;

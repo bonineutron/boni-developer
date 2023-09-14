@@ -1,5 +1,5 @@
-import { SparksBackground } from './child-components/sparks-background/sparks-background';
-import { ELanguage } from '../../../shared/enums/language.enum';
+import { SparksBackground } from './child-components';
+import { ELanguage } from '../../../../shared/enums';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';

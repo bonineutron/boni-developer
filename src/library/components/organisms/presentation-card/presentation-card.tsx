@@ -1,5 +1,5 @@
-import { ISkills } from '../../../shared/interfaces/global.interface';
-import { Image } from '../image/image';
+import { ISkills } from '../../../../shared/interfaces';
+import { Image } from '../../../components';
 
 export interface PresentationCardProps {
   title: string;

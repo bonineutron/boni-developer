@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Image } from '../image/image';
 
 export function ExperienceCard(): JSX.Element {
   const images = [
@@ -34,19 +33,6 @@ export function ExperienceCard(): JSX.Element {
         </div>
         <div className='h-fit w-fit flex gap-[10px] mx-auto'>
           <div className='relative h-[250px] w-[120px] flex justify-center'>
-            <div className='absolute h-[220px] w-[110px] bottom-[5px] z-[1]'>
-              {images.map((image: string, index: number) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`slide ${index + 1}`}
-                  className={`absolute top-0 h-full w-full rounded-md object-cover opacity-0 transition-all duration-[1000ms] ease-out ${
-                    index === currentSlide ? '!opacity-100' : ''
-                  }`}
-                />
-              ))}
-              <img src={images[0]} alt='why it contains is absolute' className='invisible' />
-            </div>
             <img
               src='/images/global/phone-cover.svg'
               alt='phone'
@@ -54,6 +40,19 @@ export function ExperienceCard(): JSX.Element {
               width='auto'
               className='absolute z-[2]'
             />
+            <div className='absolute h-[220px] w-[110px] bottom-[5px] z-[1]'>
+              {images.map((image: string, index: number) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`slide ${index + 1}`}
+                  className={`absolute h-full w-full rounded-md object-cover opacity-0 transition-all duration-[1000ms] ease-out ${
+                    index === currentSlide ? 'opacity-100' : ''
+                  }`}
+                />
+              ))}
+              <img src={images[0]} alt='why it contains is absolute' className='invisible' />
+            </div>
           </div>
           <div className='h-full w-[140px] flex flex-col py-[10px] justify-between items-end'>
             <div className='h-fit w-full flex flex-col font-medium'>

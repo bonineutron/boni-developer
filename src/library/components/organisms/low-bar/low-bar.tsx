@@ -1,4 +1,4 @@
-import { ContactModal, LanguageModal } from '../modal/all-modals';
+import { ContactModal, LanguageModal } from '../../../components';
 import { useTranslation } from 'react-i18next';
 import { HiLanguage } from 'react-icons/hi2';
 import { useState } from 'react';

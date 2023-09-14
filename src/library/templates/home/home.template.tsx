@@ -1,7 +1,7 @@
+import { ExperienceCard, LowBar, PresentationCard } from '../../components';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ExperienceCard, LowBar, PresentationCard } from '../../components';
 import { useRef, useEffect } from 'react';
 import 'swiper/scss/pagination';
 import './home.module.scss';
