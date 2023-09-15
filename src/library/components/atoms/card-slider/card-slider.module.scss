@@ -1,0 +1,29 @@
+:global {
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0 !important;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+
+    @media (min-width: 768px) {
+      gap: 8px;
+    }
+
+    .swiper-pagination-bullet {
+      height: 10px;
+      width: 10px;
+
+      @media (min-width: 768px) {
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: #000000 !important;
+  }
+}
