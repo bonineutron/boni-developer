@@ -1,2 +1,2 @@
-export * from './organisms';
-export * from './atoms';
+export * from './app-components';
+export * from './shared-components';

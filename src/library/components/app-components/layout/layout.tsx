@@ -1,8 +1,8 @@
 import { SparksBackground } from './child-components';
-import { ELanguage } from '../../../../shared/enums';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import { ELanguage } from 'enums';
 
 interface LayoutProps {
   children: React.ReactNode;

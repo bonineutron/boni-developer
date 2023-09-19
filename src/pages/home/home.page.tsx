@@ -1,5 +1,5 @@
-import { Layout } from '../../../src/library/components';
-import { HomeTemplate } from '../../library/templates';
+import { HomeTemplate } from 'templates';
+import { Layout } from 'components';
 
 export function HomePage() {
   return (

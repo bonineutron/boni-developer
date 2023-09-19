@@ -1,5 +1,5 @@
-import { NotFoundPage, HomePage } from './pages';
 import { Route, Routes } from 'react-router-dom';
+import { NotFoundPage, HomePage } from 'pages';
 
 export default function Router(): JSX.Element {
   return (

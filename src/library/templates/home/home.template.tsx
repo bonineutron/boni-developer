@@ -1,4 +1,4 @@
-import { CardSlider, ExperienceCard, LowBar, PresentationCard } from '../../components';
+import { CardSlider, ExperienceCard, LowBar, PresentationCard } from 'components';
 import { useRef, useEffect, useState } from 'react';
 
 export function HomeTemplate() {

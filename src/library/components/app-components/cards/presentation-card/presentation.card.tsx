@@ -1,7 +1,7 @@
-import { ISkills } from '../../../../../shared/interfaces';
-import { Image } from '../../..';
+import { ISkills } from 'interfaces';
+import { Image } from 'components';
 
-export interface PresentationCardProps {
+interface Props {
   title: string;
   subTitle: string;
   description: string;
@@ -9,7 +9,7 @@ export interface PresentationCardProps {
   skills: ISkills[];
 }
 
-export function PresentationCard({ title, subTitle, description, image, skills }: PresentationCardProps): JSX.Element {
+export function PresentationCard({ title, subTitle, description, image, skills }: Props): JSX.Element {
   // styles
   const progressContainer: string = 'h-[7px] w-full rounded-full border-[1px] border-black overflow-hidden mt-[3px]';
   const barProgress: string = 'h-full bg-black';
