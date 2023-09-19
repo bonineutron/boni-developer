@@ -5,12 +5,12 @@ import './card-slider.module.scss';
 import 'swiper/scss/pagination';
 import 'swiper/scss';
 
-export interface CardSliderProps {
+interface Props {
   cards: JSX.Element[];
   slidesPerView: number;
 }
 
-export function CardSlider({ cards, slidesPerView }: CardSliderProps): JSX.Element {
+export function CardSlider({ cards, slidesPerView }: Props): JSX.Element {
   return (
     <div className='relative h-fit w-full pb-[30px] md:pb-[60px]'>
       <Swiper

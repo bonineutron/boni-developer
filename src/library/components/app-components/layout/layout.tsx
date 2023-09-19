@@ -4,11 +4,11 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { ELanguage } from 'enums';
 
-interface LayoutProps {
+interface Props {
   children: React.ReactNode;
 }
 
-export function Layout({ children }: LayoutProps) {
+export function Layout({ children }: Props) {
   // configuration
   const { i18n } = useTranslation();
   const { language } = useParams();

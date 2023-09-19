@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export interface ImageProps {
+interface Props {
   src: string;
   alt: string;
   height: string;
@@ -8,7 +8,7 @@ export interface ImageProps {
   className?: string;
 }
 
-export function Image({ src, alt, height, width, className }: ImageProps): JSX.Element {
+export function Image({ src, alt, height, width, className }: Props): JSX.Element {
   // states
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);

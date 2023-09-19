@@ -2,12 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { VscClose } from 'react-icons/vsc';
 import { useRef, useEffect } from 'react';
 
-interface ModalProps {
+interface Props {
   children: React.ReactNode;
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Modal({ children, closeClick }: ModalProps): JSX.Element {
+export function Modal({ children, closeClick }: Props): JSX.Element {
   // configuration
   const transitionContainer = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();

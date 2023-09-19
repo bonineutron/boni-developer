@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { Modal } from 'components';
 import { ELanguage } from 'enums';
 
-interface LanguageModalProps {
+interface Props {
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function LanguageModal({ closeClick }: LanguageModalProps): JSX.Element {
+export function LanguageModal({ closeClick }: Props): JSX.Element {
   // configuration
   const { t, i18n } = useTranslation();
 

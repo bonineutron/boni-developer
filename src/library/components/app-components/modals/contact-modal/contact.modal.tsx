@@ -3,11 +3,11 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { RiMailSendFill } from 'react-icons/ri';
 import { Modal } from 'components';
 
-interface ContactModalProps {
+interface Props {
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function ContactModal({ closeClick }: ContactModalProps): JSX.Element {
+export function ContactModal({ closeClick }: Props): JSX.Element {
   // styles
   const optionContact: string = 'custom-button flex items-center gap-2 w-[200px] bg-white text-black';
   const iconContact: string = 'text-[30px]';

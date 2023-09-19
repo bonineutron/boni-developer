@@ -28,3 +28,22 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
+
+.card {
+  height: 480px;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  @media (min-width: 640px) {
+    padding: 20px 24px;
+  }
+}

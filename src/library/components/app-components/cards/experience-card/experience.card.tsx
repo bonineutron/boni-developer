@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
+import { Detail } from 'components';
+
+const images = [
+  'https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600'
+];
 
 export function ExperienceCard(): JSX.Element {
-  const images = [
-    'https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600'
-  ];
-
+  // states
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   // effects
@@ -20,16 +22,13 @@ export function ExperienceCard(): JSX.Element {
   }, []);
 
   return (
-    <div className='h-[480px] w-[90%] max-w-[400px] p-[20px] flex flex-col justify-around mx-auto rounded-lg overflow-hidden shadow-md bg-white sm:px-[24px]'>
-      <div>
-        <h2 className='text-[30px] font-medium leading-none mb-1'>Tribes Media</h2>
-        <h1 className='text-[18px] italic leading-none'>2021</h1>
-        <div className='h-[1px] w-full bg-black rounded-full my-[8px]' />
-        <p className='custom-paragraph'>
-          Uno de los desafíos que más recuerdo fue integrar el API de Stripe, donde aprendí a adaptar mi código con un
-          proyecto realizado por otro profesional.
-        </p>
-      </div>
+    <div className='card'>
+      <Detail
+        title='Tribes Media'
+        subTitle='2021'
+        description='Uno de los desafíos que más recuerdo fue integrar el API de Stripe, donde aprendí a adaptar mi código con un
+          proyecto realizado por otro profesional.'
+      />
       <div className='h-fit w-fit flex gap-[10px] mx-auto'>
         <div className='relative h-[250px] w-[120px] flex justify-center'>
           <img src='/images/global/phone-cover.svg' alt='phone' height='100%' width='auto' className='absolute z-[2]' />
