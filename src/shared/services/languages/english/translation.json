@@ -1,13 +1,14 @@
 {
-  "lowBar": {
-    "contact": "Contact",
-    "language": "Language"
-  },
-  "modal": {
-    "close": "Close"
-  },
-  "languageModal": {
+  "language": {
+    "label": "Language",
     "spanish": "Spanish",
     "english": "English"
+  },
+  "generics": {
+    "close": "Close",
+    "contact": "Contact",
+    "see-more": "See more",
+    "next": "next",
+    "previous": "previous"
   }
 }

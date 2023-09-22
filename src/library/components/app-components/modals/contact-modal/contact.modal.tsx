@@ -9,7 +9,8 @@ interface Props {
 
 export function ContactModal({ closeClick }: Props): JSX.Element {
   // styles
-  const optionContact: string = 'custom-button flex items-center gap-2 w-[200px] bg-white text-black';
+  const optionContact: string =
+    'custom-button flex items-center gap-2 w-[200px] bg-white text-black active:bg-gray-200';
   const iconContact: string = 'text-[30px]';
 
   return (

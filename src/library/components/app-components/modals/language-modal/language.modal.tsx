@@ -16,7 +16,8 @@ export function LanguageModal({ closeClick }: Props): JSX.Element {
   };
 
   // styles
-  const optionLeguage: string = 'custom-button bg-white text-black flex items-center gap-[10px] w-[200px]';
+  const optionLeguage: string =
+    'custom-button bg-white text-black flex items-center gap-[10px] w-[200px] active:bg-gray-200';
 
   return (
     <Modal closeClick={closeClick}>
@@ -31,7 +32,7 @@ export function LanguageModal({ closeClick }: Props): JSX.Element {
             alt='spanish-image'
             className='h-[30px] w-[30px] rounded-full'
           />
-          <span>{t('languageModal.spanish')}</span>
+          <span>{t('language.spanish')}</span>
         </button>
         <button
           onClick={() => {
@@ -43,7 +44,7 @@ export function LanguageModal({ closeClick }: Props): JSX.Element {
             alt='spanish-image'
             className='h-[30px] w-[30px] rounded-full'
           />
-          <span>{t('languageModal.english')}</span>
+          <span>{t('language.english')}</span>
         </button>
       </div>
     </Modal>

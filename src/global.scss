@@ -16,7 +16,8 @@ body {
   color: #000000;
 }
 
-button {
+button,
+a.custom-button {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }

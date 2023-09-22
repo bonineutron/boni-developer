@@ -30,8 +30,8 @@ export function SeeMoreInformation({ paragraph, limit, children }: ParagraphProp
             onClick={() => {
               setShowMoreInformation(true);
             }}
-            className='font-semibold underline ml-1 active:text-gray-400'>
-            Ver mas
+            className='font-semibold underline ml-1 active:text-gray-200'>
+            {t('generics.see-more')}
           </button>
         </p>
         <div
@@ -39,11 +39,11 @@ export function SeeMoreInformation({ paragraph, limit, children }: ParagraphProp
             showMoreInformation ? 'left-0' : 'left-[-100%]'
           }`}>
           {children}
-          <div className='h-fit w-full flex justify-center active:text-gray-400'>
+          <div className='h-fit w-full flex justify-center active:text-gray-200'>
             <button
               onClick={() => setShowMoreInformation(false)}
               className='text-[18px] font-medium italic flex items-center'>
-              <span>{t('modal.close')}</span>
+              <span>{t('generics.close')}</span>
               <VscClose className='text-[30px]' />
             </button>
           </div>

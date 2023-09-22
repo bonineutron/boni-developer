@@ -35,8 +35,8 @@ export function Modal({ children, closeClick }: Props): JSX.Element {
             closeClick(false);
           }, 200);
         }}
-        className='absolute bottom-[70px] text-[18px] font-medium italic flex items-center active:text-gray-400'>
-        <span>{t('modal.close')}</span>
+        className='absolute bottom-[70px] text-[18px] font-medium italic flex items-center active:text-gray-200'>
+        <span>{t('generics.close')}</span>
         <VscClose className='text-[30px]' />
       </button>
     </div>

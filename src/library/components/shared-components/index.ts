@@ -1,4 +1,3 @@
-export * from './see-more-information/see-more-information';
 export * from './images-transition/images-transition';
 export * from './card-slider/card-slider';
 export * from './phone-cover/phone-cover';

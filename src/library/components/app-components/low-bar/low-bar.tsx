@@ -18,10 +18,10 @@ export function LowBar(): JSX.Element {
           onClick={() => setShowLanguageModal(true)}
           className='custom-button bg-white text-black flex items-center gap-[5px]'>
           <HiLanguage className='text-[22px]' />
-          <span>{t('lowBar.language')}</span>
+          <span>{t('language.label')}</span>
         </button>
         <button onClick={() => setShowContactModal(true)} className='custom-button'>
-          {t('lowBar.contact')}
+          {t('generics.contact')}
         </button>
       </div>
       {showLanguageModal && <LanguageModal closeClick={setShowLanguageModal} />}
