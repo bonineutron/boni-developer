@@ -24,11 +24,18 @@ export function Modal({ children, closeClick }: Props): JSX.Element {
   return (
     <div
       ref={transitionContainer}
-      className='absolute bottom-0 h-[100dvh] w-full flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-[1000ms] z-[10]'>
+      className='absolute bottom-0 h-[100dvh] w-screen flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-200 z-[10]'>
       {children}
       <button
-        onClick={() => closeClick(false)}
-        className='absolute bottom-[70px] text-[18px] font-medium italic flex items-center'>
+        onClick={() => {
+          if (transitionContainer.current) {
+            transitionContainer.current.classList.remove('opacity-100');
+          }
+          setTimeout(() => {
+            closeClick(false);
+          }, 200);
+        }}
+        className='absolute bottom-[70px] text-[18px] font-medium italic flex items-center active:text-gray-400'>
         <span>{t('modal.close')}</span>
         <VscClose className='text-[30px]' />
       </button>

@@ -43,14 +43,15 @@ export function HomeTemplate() {
     <div
       ref={transitionContainer}
       id='home-template'
-      className='relative h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-[1000ms] pb-[80px]'>
+      className='h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-[1000ms] pb-[80px]'>
       <CardSlider
         slidesPerView={validateSlidesPerView(widthScreen)}
         cards={[
           <PresentationCard
             title='Andrés Bonilla'
             subTitle='Sr. Front-end Developer'
-            description='Me esfuerzo constantemente por tener orden en todo lo que hago y mejorar es algo que me gusta hacer.En este sitio iré registrando algunos momentos de mi vida, aquellos que han hecho de mí una mejor persona y un mejor desarrollador.'
+            description='Uno de los desafíos que más recuerdo fue integrar el API de Stripe, donde aprendí a adaptar mi código con un
+            proyecto realizado por otro profesional.'
             image='/images/global/presentation-picture.jpg'
             skills={[
               { label: 'React', progressPercentage: '80%' },
