@@ -9,6 +9,16 @@
     "contact": "Contact",
     "see-more": "See more",
     "next": "next",
-    "previous": "previous"
+    "previous": "previous",
+    "see-site": "See site",
+    "greeting": "Hi, I'm"
+  },
+  "cards": {
+    "presentation": {
+      "description": "I constantly strive to maintain order in everything I do, and improving is something I enjoy doing. On this site, I will be documenting some moments of my life, those that have made me a better person and a better developer."
+    },
+    "glitch": {
+      "description": "One of the challenges I remember the most was integrating the Stripe API, where I learned to adapt my code to a project created by another professional."
+    }
   }
 }

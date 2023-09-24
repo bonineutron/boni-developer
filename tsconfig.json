@@ -19,6 +19,7 @@
     "paths": {
       "components": ["library/components/"],
       "interfaces": ["shared/interfaces/"],
+      "utilities": ["shared/utilities/"],
       "templates": ["library/templates/"],
       "enums": ["shared/enums/"],
       "pages": ["pages/"]

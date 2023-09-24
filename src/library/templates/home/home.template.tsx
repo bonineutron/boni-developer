@@ -1,8 +1,10 @@
 import { CardSlider, ExperienceCard, LowBar, PresentationCard } from 'components';
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function HomeTemplate() {
   // configuration
+  const { t } = useTranslation();
   const transitionContainer = useRef<HTMLDivElement>(null);
 
   const [widthScreen, setWidthScreen] = useState<number>(window.innerWidth);
@@ -39,6 +41,14 @@ export function HomeTemplate() {
     return 1;
   };
 
+  const seeMoreComponent = (paragraph: string): JSX.Element => {
+    return (
+      <div className='h-full w-full flex items-center'>
+        <p className='custom-paragraph'>{paragraph}</p>
+      </div>
+    );
+  };
+
   return (
     <div
       ref={transitionContainer}
@@ -49,20 +59,24 @@ export function HomeTemplate() {
         cards={[
           <PresentationCard
             title='Andrés Bonilla'
-            subTitle='Sr. Front-end Developer'
-            description='Uno de los desafíos que más recuerdo fue integrar el API de Stripe, donde aprendí a adaptar mi código con un
-            proyecto realizado por otro profesional.'
-            image='/images/global/presentation-picture.jpg'
-            skills={[
-              { label: 'React', progressPercentage: '80%' },
-              { label: 'Angular', progressPercentage: '80%' },
-              { label: 'React Native', progressPercentage: '80%' },
-              { label: 'Flutter', progressPercentage: '80%' }
-            ]}
+            position='Sr. Front-end Developer'
+            description={t('cards.presentation.description')}
+            image='images/global/presentation-picture.jpg'
+            seeMoreComponent={seeMoreComponent(t('cards.presentation.description'))}
           />,
-          <ExperienceCard />,
-          <ExperienceCard />,
-          <ExperienceCard />
+          <ExperienceCard
+            title='Glitch'
+            subTitle='2021'
+            description={t('cards.glitch.description')}
+            images={[
+              'images/experience/glitch/glitch_1.png',
+              'images/experience/glitch/glitch_2.png',
+              'images/experience/glitch/glitch_3.png'
+            ]}
+            technologies={['React.js', 'React Native', 'Firebase', 'MongoDB', 'GraphgQL', 'Sripe']}
+            seeMoreComponent={seeMoreComponent(t('cards.glitch.description'))}
+            urlSite='https://glitchanimation.com/'
+          />
         ]}
       />
       <LowBar />

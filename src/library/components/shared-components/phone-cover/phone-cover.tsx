@@ -5,7 +5,7 @@ interface Props {
   height: string;
 }
 
-export default function PhoneCover({ images, height }: Props): JSX.Element {
+export function PhoneCover({ images, height }: Props): JSX.Element {
   return (
     <div className='relative w-fit' style={{ height: height }}>
       <img src='/images/global/phone-cover.svg' alt='phone-cover' className='absolute top-0 h-full z-[1]' />

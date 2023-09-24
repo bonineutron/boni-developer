@@ -19,7 +19,7 @@ export function SeeMoreInformation({ paragraph, limit, children }: ParagraphProp
   const [showMoreInformation, setShowMoreInformation] = useState<boolean>(false);
 
   // styles
-  const paragraphClass: string = 'leading-[22px]';
+  const paragraphClass: string = 'custom-paragraph';
 
   if (splitParagraph.length > limit) {
     return (
@@ -30,7 +30,7 @@ export function SeeMoreInformation({ paragraph, limit, children }: ParagraphProp
             onClick={() => {
               setShowMoreInformation(true);
             }}
-            className='font-semibold underline ml-1 active:text-gray-200'>
+            className='font-medium underline italic underline-offset-[3px] ml-[5px] active:text-gray-200'>
             {t('generics.see-more')}
           </button>
         </p>
