@@ -15,10 +15,16 @@
   },
   "cards": {
     "presentation": {
-      "description": "Me esfuerzo constantemente por tener orden en todo lo que hago y mejorar es algo que me gusta hacer. En este sitio iré registrando algunos momentos de mi vida, aquellos que han hecho de mí una mejor persona y un mejor desarrollador."
+      "description": "Construyo cosas para la web, me gusta todo el proceso que conlleva terminar un proyecto. He trabajado con diferentes lenguajes de programación; en el que tengo más experiencia es JavaScript, manejando frameworks como React y Angular. He creado este espacio para ir registrando algunos de los proyectos que he realizado, principalmente los que más me han gustado."
     },
     "glitch": {
-      "description": "Uno de los desafíos que más recuerdo fue integrar el API de Stripe, donde aprendí a adaptar mi código con un proyecto realizado por otro profesional."
+      "description": "Una aplicación de entretenimiento audiovisual, dirigida más que todo a diseñadores o amantes de la animación. En varias ocasiones, mientras ayudaba a desarrollar este proyecto, disfruté uno de estos cortos audiovisuales. El reto más que grande que se me presentó fue integrar la pasarela de pago Stripe, un desafío con demasiada responsabilidad, que se cumplió de la mejor manera."
+    },
+    "gepp": {
+      "description": "El primer proyecto hecho completamente desde cero con mis manos. Este proyecto consistía en hacer rápidamente una función para una aplicación que usan los tenderos de Pepsi en México. Se optó por usar React para generar una PWA y consumirla a partir de un WebView dentro de la aplicación móvil."
+    },
+    "simon": {
+      "description": "Una plataforma de educación, donde el reto más grande era hacer lo más entretenido el consumo de los cursos. Para esto se aplicó un funcionamiento muy parecido al de TikTok, donde se priorizan videos cortos y entretenidos. Disfruté mucho terminando este proyecto, ya que mejoré muchos aspectos como desarrollador."
     }
   }
 }

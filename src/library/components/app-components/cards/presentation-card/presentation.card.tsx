@@ -20,8 +20,8 @@ export function PresentationCard({ title, position, description, seeMoreComponen
         <h2 className='text-[30px] font-medium my-2'>{title}</h2>
         <h1 className='italic'>{position}</h1>
       </div>
-      <Image src={image} alt='presentation-picture' height='140px' width='230px' className='rounded-md' />
-      <SeeMoreInformation paragraph={description} limit={28} children={seeMoreComponent} />
+      <Image src={image} alt='presentation-picture' height='180px' width='260px' className='rounded-md' />
+      <SeeMoreInformation paragraph={description} limit={20} children={seeMoreComponent} />
     </div>
   );
 }

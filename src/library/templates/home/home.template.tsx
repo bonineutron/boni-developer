@@ -61,7 +61,7 @@ export function HomeTemplate() {
             title='Andrés Bonilla'
             position='Sr. Front-end Developer'
             description={t('cards.presentation.description')}
-            image='images/global/presentation-picture.jpg'
+            image='images/global/presentation-picture.jpeg'
             seeMoreComponent={seeMoreComponent(t('cards.presentation.description'))}
           />,
           <ExperienceCard
@@ -73,9 +73,35 @@ export function HomeTemplate() {
               'images/experience/glitch/glitch_2.png',
               'images/experience/glitch/glitch_3.png'
             ]}
-            technologies={['React.js', 'React Native', 'Firebase', 'MongoDB', 'GraphgQL', 'Sripe']}
+            technologies={['React.js', 'React Native', 'Firebase', 'MongoDB', 'GraphgQL', 'Sripe', 'Revenuecat']}
             seeMoreComponent={seeMoreComponent(t('cards.glitch.description'))}
             urlSite='https://glitchanimation.com/'
+          />,
+          <ExperienceCard
+            title='Gepp'
+            subTitle='2022'
+            description={t('cards.gepp.description')}
+            images={[
+              'images/experience/gepp/gepp_1.png',
+              'images/experience/gepp/gepp_2.png',
+              'images/experience/gepp/gepp_3.png',
+              'images/experience/gepp/gepp_4.png'
+            ]}
+            technologies={['React.js', 'AWS', 'Node.js', 'Firebase', 'G. Analytics', 'Flutter', 'Adobe Xd']}
+            seeMoreComponent={seeMoreComponent(t('cards.gepp.description'))}
+          />,
+          <ExperienceCard
+            title='Simon'
+            subTitle='2023'
+            description={t('cards.simon.description')}
+            images={[
+              'images/experience/simon/simon_1.png',
+              'images/experience/simon/simon_2.png',
+              'images/experience/simon/simon_3.png'
+            ]}
+            technologies={['React.js', 'AWS', 'Redux', 'G. Analytics', 'UX', 'Hotjar', 'Mixpanel']}
+            seeMoreComponent={seeMoreComponent(t('cards.simon.description'))}
+            urlSite='https://app.holasimon.ai/simon/home'
           />
         ]}
       />
