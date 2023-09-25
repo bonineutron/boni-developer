@@ -1,4 +1,4 @@
-import { CardSlider, ExperienceCard, LowBar, PresentationCard } from 'components';
+import { CardSlider, ExperienceCard, Image, LowBar, PresentationCard } from 'components';
 import { useRef, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -53,7 +53,10 @@ export function HomeTemplate() {
     <div
       ref={transitionContainer}
       id='home-template'
-      className='h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-[1000ms] pb-[80px]'>
+      className='h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-[1000ms]'>
+      <div className='absolute top-0 left-0 h-[60px] w-full bg-white shadow-md flex items-center justify-center'>
+        <Image src='/images/boni-dev-md.svg' alt='boni-logo' height='30px' width='auto' />
+      </div>
       <CardSlider
         slidesPerView={validateSlidesPerView(widthScreen)}
         cards={[

@@ -1,4 +1,4 @@
-import { ContactModal, LanguageModal } from 'components';
+import { ContactModal, Image, LanguageModal } from 'components';
 import { useTranslation } from 'react-i18next';
 import { HiLanguage } from 'react-icons/hi2';
 import { useState } from 'react';
@@ -12,8 +12,18 @@ export function LowBar(): JSX.Element {
   const [showContactModal, setShowContactModal] = useState<boolean>(false);
 
   return (
-    <div className='absolute bottom-0 h-[80px] w-full'>
-      <div className='h-full w-full flex justify-evenly'>
+    <div className='absolute bottom-0 h-[80px] w-full flex justify-evenly md:items-center lg:h-[100px]'>
+      <div className='hidden lg:flex items-center gap-[10px]'>
+        <Image
+          src='/images/language/spanish.image.svg'
+          alt='colombian-flag'
+          height='30px'
+          width='auto'
+          className='rounded-md'
+        />
+        <p className='text-[18px] font-medium'>Hecho en Colombia</p>
+      </div>
+      <div className='h-fit w-fit flex gap-[40px] lg:gap-[20px]'>
         <button
           onClick={() => setShowLanguageModal(true)}
           className='custom-button bg-white text-black flex items-center gap-[5px]'>
