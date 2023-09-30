@@ -33,7 +33,7 @@ export function CardSlider({ cards, slidesPerView }: Props): JSX.Element {
           <SwiperSlide key={`swiper-slide_${index}`}>{card}</SwiperSlide>
         ))}
       </Swiper>
-      <div className='absolute left-0 right-0 bottom-[26px] h-[24px] w-fit mx-auto hidden md:flex justify-center gap-[40px] text-[18px] font-medium italic'>
+      <div className='absolute left-0 right-0 bottom-[26px] h-[24px] w-fit mx-auto hidden md:flex justify-center gap-[50px] text-[18px] font-medium italic'>
         <button className='image-swiper-button-prev w-[120px] flex items-center justify-end active:text-gray-200'>
           <IoIosArrowBack />
           <span>{t('generics.previous')}</span>

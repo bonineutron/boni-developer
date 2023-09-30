@@ -4,17 +4,17 @@ import { RiMailSendFill } from 'react-icons/ri';
 import { Modal } from 'components';
 
 interface Props {
-  closeClick: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowContactModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function ContactModal({ closeClick }: Props): JSX.Element {
+export function ContactModal({ setShowContactModal }: Props): JSX.Element {
   // styles
   const optionContact: string =
     'custom-button flex items-center gap-2 w-[200px] bg-white text-black active:bg-gray-200';
   const iconContact: string = 'text-[30px]';
 
   return (
-    <Modal closeClick={closeClick}>
+    <Modal closeClick={setShowContactModal}>
       <div className='flex flex-col gap-[20px]'>
         <a
           href='https://www.linkedin.com/in/bonineutron/'

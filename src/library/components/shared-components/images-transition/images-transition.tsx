@@ -29,7 +29,7 @@ export function ImagesTransition({ images, height, width, className }: Props): J
           key={`image_${index}`}
           src={image}
           alt={`slide ${index + 1}`}
-          className={`absolute h-full w-full object-cover opacity-0 transition-all duration-[1000ms] ease-out ${
+          className={`absolute top-0 left-0 h-full w-full object-cover transition-all duration-500 ease-out opacity-0 ${
             index === currentSlide ? 'opacity-100' : ''
           }`}
         />

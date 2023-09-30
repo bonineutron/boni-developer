@@ -8,9 +8,11 @@
     align-items: flex-end;
     justify-content: center;
     gap: 4px;
+    padding-bottom: 10px;
 
     @media (min-width: 768px) {
       gap: 8px;
+      padding-bottom: 0px;
     }
 
     .swiper-pagination-bullet {

@@ -7,11 +7,12 @@
   "generics": {
     "close": "Close",
     "contact": "Contact",
-    "see-more": "See more",
+    "read-more": "Read more",
     "next": "next",
     "previous": "previous",
     "see-site": "See site",
-    "greeting": "Hi, I'm"
+    "greeting": "Hi, I'm",
+    "made-colombia": "Made in Colombia"
   },
   "cards": {
     "presentation": {

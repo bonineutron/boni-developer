@@ -1,1 +1,1 @@
-export * from './sparks-background/sparks-background';
+export * from './background-transition/background-transition';

@@ -12,7 +12,7 @@ export function LowBar(): JSX.Element {
   const [showContactModal, setShowContactModal] = useState<boolean>(false);
 
   return (
-    <div className='absolute bottom-0 h-[80px] w-full flex justify-evenly md:items-center lg:h-[100px]'>
+    <div className='absolute bottom-0 h-[70px] w-full flex justify-evenly md:items-center lg:h-[100px]'>
       <div className='hidden lg:flex items-center gap-[10px]'>
         <Image
           src='/images/language/spanish.image.svg'
@@ -21,7 +21,7 @@ export function LowBar(): JSX.Element {
           width='auto'
           className='rounded-md'
         />
-        <p className='text-[18px] font-medium'>Hecho en Colombia</p>
+        <p className='text-[18px] font-medium'>{t('generics.made-colombia')}</p>
       </div>
       <div className='h-fit w-fit flex gap-[40px] lg:gap-[20px]'>
         <button
@@ -34,8 +34,8 @@ export function LowBar(): JSX.Element {
           {t('generics.contact')}
         </button>
       </div>
-      {showLanguageModal && <LanguageModal closeClick={setShowLanguageModal} />}
-      {showContactModal && <ContactModal closeClick={setShowContactModal} />}
+      {showLanguageModal && <LanguageModal setShowLanguageModal={setShowLanguageModal} />}
+      {showContactModal && <ContactModal setShowContactModal={setShowContactModal} />}
     </div>
   );
 }

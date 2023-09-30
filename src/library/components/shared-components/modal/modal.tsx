@@ -5,9 +5,10 @@ import { useRef, useEffect } from 'react';
 interface Props {
   children: React.ReactNode;
   closeClick: React.Dispatch<React.SetStateAction<boolean>>;
+  hideModal?: boolean;
 }
 
-export function Modal({ children, closeClick }: Props): JSX.Element {
+export function Modal({ children, closeClick, hideModal }: Props): JSX.Element {
   // configuration
   const transitionContainer = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
@@ -20,6 +21,17 @@ export function Modal({ children, closeClick }: Props): JSX.Element {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (hideModal) {
+      if (transitionContainer.current) {
+        transitionContainer.current.classList.remove('opacity-100');
+      }
+      setTimeout(() => {
+        closeClick(false);
+      }, 200);
+    }
+  }, [hideModal]);
 
   return (
     <div

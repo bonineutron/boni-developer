@@ -31,7 +31,7 @@ export function SeeMoreInformation({ paragraph, limit, children }: ParagraphProp
               setShowMoreInformation(true);
             }}
             className='font-medium underline italic underline-offset-[3px] ml-[5px] active:text-gray-200'>
-            {t('generics.see-more')}
+            {t('generics.read-more')}
           </button>
         </p>
         <div

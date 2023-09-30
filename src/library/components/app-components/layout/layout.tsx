@@ -1,4 +1,4 @@
-import { SparksBackground } from './child-components';
+import { BackgroundTransition } from './child-components';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -26,7 +26,7 @@ export function Layout({ children }: Props) {
 
   return (
     <div id='layout' className='relative h-[100dvh] w-screen overflow-hidden'>
-      <SparksBackground />
+      <BackgroundTransition />
       {children}
     </div>
   );

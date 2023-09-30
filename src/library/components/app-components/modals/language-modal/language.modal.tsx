@@ -1,14 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { Modal } from 'components';
 import { ELanguage } from 'enums';
+import { useState } from 'react';
 
 interface Props {
-  closeClick: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowLanguageModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function LanguageModal({ closeClick }: Props): JSX.Element {
+export function LanguageModal({ setShowLanguageModal }: Props): JSX.Element {
   // configuration
   const { t, i18n } = useTranslation();
+
+  // states
+  const [hideModal, setHideModal] = useState<boolean>(false);
 
   // methods
   const changeLanguage = (lenguage: ELanguage): void => {
@@ -20,11 +24,12 @@ export function LanguageModal({ closeClick }: Props): JSX.Element {
     'custom-button bg-white text-black flex items-center gap-[10px] w-[200px] active:bg-gray-200';
 
   return (
-    <Modal closeClick={closeClick}>
+    <Modal closeClick={setShowLanguageModal} hideModal={hideModal}>
       <div className='flex flex-col gap-[20px]'>
         <button
           onClick={() => {
             changeLanguage(ELanguage.spanish);
+            setHideModal(true);
           }}
           className={optionLeguage}>
           <img
@@ -37,6 +42,7 @@ export function LanguageModal({ closeClick }: Props): JSX.Element {
         <button
           onClick={() => {
             changeLanguage(ELanguage.english);
+            setHideModal(true);
           }}
           className={optionLeguage}>
           <img
