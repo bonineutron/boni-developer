@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "boni.dev",
   "description": "bonilla developer presentation",
   "author": "boni.dev",
@@ -13,7 +13,8 @@
     "dev": "vite --mode staging --host",
     "start": "vite --mode production --host",
     "build-staging": "tsc && vite build --mode staging",
-    "build-production": "tsc && vite build --mode production"
+    "build-production": "tsc && vite build --mode production",
+    "deploy": "aws s3 sync dist/ s3://bonidev"
   },
   "dependencies": {
     "react": "^18.2.0",

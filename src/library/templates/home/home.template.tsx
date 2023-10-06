@@ -15,7 +15,7 @@ export function HomeTemplate() {
       if (transitionContainer.current) {
         transitionContainer.current.classList.add('opacity-100');
       }
-    }, 1500);
+    }, 1000);
 
     window.addEventListener('resize', handleResizeWindow);
 
@@ -54,7 +54,7 @@ export function HomeTemplate() {
     <div
       ref={transitionContainer}
       id='home-template'
-      className='h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-500'>
+      className='h-full w-full max-w-[1400px] mx-auto flex justify-center items-center opacity-0 transition-all duration-1000'>
       <div className='absolute top-0 left-0 h-[60px] w-full bg-white shadow-md flex items-center justify-center'>
         <Image src='/images/boni-dev-md.svg' alt='boni-logo' height='30px' width='auto' />
       </div>
@@ -65,7 +65,7 @@ export function HomeTemplate() {
             title='Andrés Bonilla'
             position='Sr. Front-end Developer'
             description={t('cards.presentation.description')}
-            image='images/global/presentation-picture.jpg'
+            image='images/global/presentation-picture.jpeg'
             seeMoreComponent={seeMoreComponent(t('cards.presentation.description'))}
           />,
           <ExperienceCard
