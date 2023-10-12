@@ -9,19 +9,35 @@ interface Props {
   seeMoreComponent: JSX.Element;
 }
 
-export function PresentationCard({ title, position, description, seeMoreComponent, image }: Props): JSX.Element {
+export function PresentationCard({
+  title,
+  position,
+  description,
+  seeMoreComponent,
+  image,
+}: Props): JSX.Element {
   // configuration
   const { t } = useTranslation();
 
   return (
-    <div className='card'>
-      <div className='text-center leading-none text-[20px]'>
-        <span className='italic'>{t('generics.greeting')}</span>
-        <h2 className='text-[30px] font-medium my-2'>{title}</h2>
-        <h1 className='italic'>{position}</h1>
+    <div className="card">
+      <div className="text-center leading-none text-[20px]">
+        <span className="italic">{t('generics.greeting')}</span>
+        <h2 className="text-[30px] font-medium my-2">{title}</h2>
+        <h1 className="italic">{position}</h1>
       </div>
-      <Image src={image} alt='presentation-picture' height='180px' width='260px' className='rounded-md' />
-      <SeeMoreInformation paragraph={description} limit={20} children={seeMoreComponent} />
+      <Image
+        src={image}
+        alt="presentation-picture"
+        height="180px"
+        width="200px"
+        className="rounded-md"
+      />
+      <SeeMoreInformation
+        paragraph={description}
+        limit={20}
+        children={seeMoreComponent}
+      />
     </div>
   );
 }
