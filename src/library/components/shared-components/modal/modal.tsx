@@ -36,7 +36,7 @@ export function Modal({ children, closeClick, hideModal }: Props): JSX.Element {
   return (
     <div
       ref={transitionContainer}
-      className='absolute bottom-0 h-[100dvh] w-screen flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-200 z-[10]'>
+      className='absolute bottom-0 dvh-compatible h-[100dvh] w-screen flex justify-center items-center opacity-0 bg-white/30 backdrop-blur-[30px] transition-all duration-200 z-[10]'>
       {children}
       <button
         onClick={() => {

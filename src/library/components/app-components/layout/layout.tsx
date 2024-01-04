@@ -25,7 +25,7 @@ export function Layout({ children }: Props) {
   }, [language]);
 
   return (
-    <div id='layout' className='relative h-[100dvh] w-screen overflow-hidden'>
+    <div id='layout' className='relative dvh-compatible h-[100dvh] w-screen overflow-hidden'>
       <BackgroundTransition />
       {children}
     </div>
