@@ -19,10 +19,10 @@
       "description": "I build things for the web; I enjoy the entire process involved in completing a project. I have worked with different programming languages, with the one I have the most experience in being JavaScript, handling frameworks like React and Angular. I have created this space to record some of the projects I have undertaken, especially the ones I have liked the most."
     },
     "glitch": {
-      "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts. The challenge that presented itself, more than significant, was integrating the Stripe payment gateway, a responsibility-laden challenge that was successfully accomplished."
+      "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts. The biggest challenge that arose for me was integrating the Stripe payment gateway, a task with significant responsibility that was successfully accomplished."
     },
     "gepp": {
-      "description": "The first project made entirely from scratch with my own hands. This project involved quickly creating a feature for an application used by Pepsi retailers in Mexico. React was chosen to generate a PWA, which is consumed through a WebView within the mobile application."
+      "description": "The first project entirely crafted from scratch with my own hands. This project involved rapidly developing a web platform for an application used by Pepsi retailers in Mexico. The decision was made to use React to build a Progressive Web App (PWA) and consume it through a WebView within the mobile application."
     },
     "simon": {
       "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible. For this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
