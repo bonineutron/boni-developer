@@ -1,4 +1,4 @@
 export interface ISkills {
-  label: string;
-  progressPercentage: string;
+   label: string;
+   progressPercentage: string;
 }

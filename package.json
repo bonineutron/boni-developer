@@ -1,44 +1,44 @@
 {
-  "private": true,
-  "version": "1.0.0",
-  "name": "boni.dev",
-  "description": "bonilla developer presentation",
-  "author": "boni.dev",
-  "main": "index.tsx",
-  "type": "module",
-  "repository": "https://github.com/bonineutron/boni.dev",
-  "license": "MIT",
-  "scripts": {
-    "preview": "vite preview --host",
-    "dev": "vite --mode staging --host",
-    "start": "vite --mode production --host",
-    "build-staging": "tsc && vite build --mode staging",
-    "build-production": "tsc && vite build --mode production",
-    "deploy": "aws s3 sync dist/ s3://bonidev"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
-    "swiper": "^10.2.0"
-  },
-  "devDependencies": {
-    "@types/mixpanel-browser": "^2.48.1",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-legacy": "^5.2.0",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "autoprefixer": "^10.4.14",
-    "i18next": "^23.4.6",
-    "mixpanel-browser": "^2.48.1",
-    "postcss": "^8.4.21",
-    "react-i18next": "^13.2.2",
-    "react-router-dom": "^6.15.0",
-    "sass": "^1.61.0",
-    "tailwindcss": "^3.3.1",
-    "terser": "^5.26.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.2.0",
-    "vite-tsconfig-paths": "^4.2.1"
-  }
+   "private": true,
+   "version": "1.0.0",
+   "name": "boni.dev",
+   "description": "bonilla developer presentation",
+   "author": "boni.dev",
+   "main": "index.tsx",
+   "type": "module",
+   "repository": "https://github.com/bonineutron/boni.dev",
+   "license": "MIT",
+   "scripts": {
+      "preview": "vite preview --host",
+      "dev": "vite --mode staging --host",
+      "start": "vite --mode production --host",
+      "build-staging": "tsc && vite build --mode staging",
+      "build-production": "tsc && vite build --mode production",
+      "deploy": "aws s3 sync dist/ s3://bonidev"
+   },
+   "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-icons": "^4.9.0",
+      "swiper": "^10.2.0"
+   },
+   "devDependencies": {
+      "@types/mixpanel-browser": "^2.48.1",
+      "@types/react": "^18.0.28",
+      "@types/react-dom": "^18.0.11",
+      "@vitejs/plugin-legacy": "^5.2.0",
+      "@vitejs/plugin-react-swc": "^3.0.0",
+      "autoprefixer": "^10.4.14",
+      "i18next": "^23.4.6",
+      "mixpanel-browser": "^2.48.1",
+      "postcss": "^8.4.21",
+      "react-i18next": "^13.2.2",
+      "react-router-dom": "^6.15.0",
+      "sass": "^1.61.0",
+      "tailwindcss": "^3.3.1",
+      "terser": "^5.26.0",
+      "typescript": "^5.1.6",
+      "vite": "^4.2.0",
+      "vite-tsconfig-paths": "^4.2.1"
+   }
 }

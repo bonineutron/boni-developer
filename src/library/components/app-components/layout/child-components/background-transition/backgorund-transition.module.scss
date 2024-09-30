@@ -1,0 +1,47 @@
+.colorOne {
+   animation-name: move1;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: var(--secondary-color);
+   height: 100%;
+
+   @keyframes move1 {
+      0% {
+         width: 0%;
+      }
+
+      100% {
+         width: 10%;
+      }
+   }
+}
+
+.colorTwo {
+   animation-name: move2;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: var(--secondary-color);
+   height: 100%;
+
+   @keyframes move2 {
+      0% {
+         width: 0%;
+      }
+
+      100% {
+         width: 10%;
+      }
+   }
+}

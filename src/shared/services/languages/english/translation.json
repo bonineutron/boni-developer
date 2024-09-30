@@ -1,31 +1,31 @@
 {
-  "language": {
-    "label": "Language",
-    "spanish": "Spanish",
-    "english": "English"
-  },
-  "generics": {
-    "close": "Close",
-    "contact": "Contact",
-    "read-more": "Read more",
-    "next": "next",
-    "previous": "previous",
-    "see-site": "See site",
-    "greeting": "Hi, I'm",
-    "made-colombia": "Made in Colombia"
-  },
-  "cards": {
-    "presentation": {
-      "description": "I build things for the web; I enjoy the entire process involved in completing a project. I have worked with different programming languages, with the one I have the most experience in being JavaScript, handling frameworks like React and Angular. I have created this space to record some of the projects I have undertaken, especially the ones I have liked the most."
-    },
-    "glitch": {
-      "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts. The biggest challenge that arose for me was integrating the Stripe payment gateway, a task with significant responsibility that was successfully accomplished."
-    },
-    "gepp": {
-      "description": "The first project entirely crafted from scratch with my own hands. This project involved rapidly developing a web platform for an application used by Pepsi retailers in Mexico. The decision was made to use React to build a Progressive Web App (PWA) and consume it through a WebView within the mobile application."
-    },
-    "simon": {
-      "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible. For this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
-    }
-  }
+   "language": {
+      "label": "Language",
+      "spanish": "Spanish",
+      "english": "English"
+   },
+   "generics": {
+      "close": "Close",
+      "contact": "Contact",
+      "read-more": "Read more",
+      "next": "next",
+      "previous": "previous",
+      "see-site": "See site",
+      "greeting": "Hi, I'm",
+      "made-colombia": "Made in Colombia"
+   },
+   "cards": {
+      "presentation": {
+         "description": "Hi, I'm a software developer with 3 years of experience creating different types of platforms. Over these years I've had to use a wide variety of technologies, using React and Angular on the Frontend, and Node and Mysql on the Backend. In cloud services, I've used different tools from Aws and Firabase. Something I've discovered throughout developing applications is that I like to plan, because it allows me to foresee possible problems that may arise."
+      },
+      "glitch": {
+         "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts. The biggest challenge that arose for me was integrating the Stripe payment gateway, a task with significant responsibility that was successfully accomplished."
+      },
+      "gepp": {
+         "description": "The first project entirely crafted from scratch with my own hands. This project involved rapidly developing a web platform for an application used by Pepsi retailers in Mexico. The decision was made to use React to build a Progressive Web App (PWA) and consume it through a WebView within the mobile application."
+      },
+      "simon": {
+         "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible. For this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
+      }
+   }
 }

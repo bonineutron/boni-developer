@@ -5,29 +5,29 @@ import { useEffect } from 'react';
 import { ELanguage } from 'enums';
 
 interface Props {
-  children: React.ReactNode;
+   children: React.ReactNode;
 }
 
 export function Layout({ children }: Props) {
-  // configuration
-  const { i18n } = useTranslation();
-  const { language } = useParams();
+   // configuration
+   const { i18n } = useTranslation();
+   const { language } = useParams();
 
-  // effects
-  useEffect(() => {
-    if (language) {
-      if (language === ELanguage.spanish) {
-        i18n.changeLanguage(ELanguage.spanish);
-        return;
+   // effects
+   useEffect(() => {
+      if (language) {
+         if (language === ELanguage.spanish) {
+            i18n.changeLanguage(ELanguage.spanish);
+            return;
+         }
+         i18n.changeLanguage(ELanguage.english);
       }
-      i18n.changeLanguage(ELanguage.english);
-    }
-  }, [language]);
+   }, [language]);
 
-  return (
-    <div id='layout' className='relative dvh-compatible h-[100dvh] w-screen overflow-hidden'>
-      <BackgroundTransition />
-      {children}
-    </div>
-  );
+   return (
+      <div id='layout' className='relative dvh-compatible h-[100dvh] w-screen overflow-hidden'>
+         <BackgroundTransition />
+         {children}
+      </div>
+   );
 }
