@@ -46,7 +46,14 @@ export function HomeTemplate() {
    const seeMoreComponent = (paragraph: string): JSX.Element => {
       return (
          <div className='h-full w-full flex items-center'>
-            <p className='custom-paragraph'>{paragraph}</p>
+            <p className='custom-paragraph'>
+               {paragraph.split('\n').map((line, index) => (
+                  <span key={index} style={{ display: 'block', marginBottom: '6px' }}>
+                     {line}
+                     <br />
+                  </span>
+               ))}
+            </p>
          </div>
       );
    };
@@ -71,17 +78,35 @@ export function HomeTemplate() {
                   seeMoreComponent={seeMoreComponent(t('cards.presentation.description'))}
                />,
                <ExperienceCard
-                  title='Glitch'
-                  subTitle='2021'
-                  description={t('cards.glitch.description')}
+                  title='Fundes Synergy'
+                  subTitle='2024'
+                  description={t('cards.fundes.description')}
+                  images={['images/experience/fundes/fundes_1.svg', 'images/experience/fundes/fundes_2.svg']}
+                  technologies={['React.js', 'S3', 'Node.js', 'Material UI', 'MySQL', 'AWS Lambda']}
+                  seeMoreComponent={seeMoreComponent(t('cards.fundes.description'))}
+                  desktop
+               />,
+               <ExperienceCard
+                  title='JRS'
+                  subTitle='2024'
+                  description={t('cards.jrs.description')}
+                  images={['images/experience/jrs/jrs_1.svg', 'images/experience/jrs/jrs_2.svg']}
+                  technologies={['React.js', 'Node.js', 'Prisma', 'MySQL', 'Docker', 'S3']}
+                  seeMoreComponent={seeMoreComponent(t('cards.jrs.description'))}
+                  desktop
+               />,
+               <ExperienceCard
+                  title='Simon'
+                  subTitle='2023'
+                  description={t('cards.simon.description')}
                   images={[
-                     'images/experience/glitch/glitch_1.png',
-                     'images/experience/glitch/glitch_2.png',
-                     'images/experience/glitch/glitch_3.png'
+                     'images/experience/simon/simon_1.png',
+                     'images/experience/simon/simon_2.png',
+                     'images/experience/simon/simon_3.png'
                   ]}
-                  technologies={['React.js', 'React Native', 'Firebase', 'MongoDB', 'GraphgQL', 'Sripe', 'Revenuecat']}
-                  seeMoreComponent={seeMoreComponent(t('cards.glitch.description'))}
-                  urlSite='https://glitchanimation.com/'
+                  technologies={['React.js', 'AWS', 'Redux', 'G. Analytics', 'UX', 'Hotjar', 'Mixpanel']}
+                  seeMoreComponent={seeMoreComponent(t('cards.simon.description'))}
+                  urlSite='https://app.holasimon.ai/simon/home'
                />,
                <ExperienceCard
                   title='Gepp'
@@ -97,17 +122,17 @@ export function HomeTemplate() {
                   seeMoreComponent={seeMoreComponent(t('cards.gepp.description'))}
                />,
                <ExperienceCard
-                  title='Simon'
-                  subTitle='2023'
-                  description={t('cards.simon.description')}
+                  title='Glitch'
+                  subTitle='2021'
+                  description={t('cards.glitch.description')}
                   images={[
-                     'images/experience/simon/simon_1.png',
-                     'images/experience/simon/simon_2.png',
-                     'images/experience/simon/simon_3.png'
+                     'images/experience/glitch/glitch_1.png',
+                     'images/experience/glitch/glitch_2.png',
+                     'images/experience/glitch/glitch_3.png'
                   ]}
-                  technologies={['React.js', 'AWS', 'Redux', 'G. Analytics', 'UX', 'Hotjar', 'Mixpanel']}
-                  seeMoreComponent={seeMoreComponent(t('cards.simon.description'))}
-                  urlSite='https://app.holasimon.ai/simon/home'
+                  technologies={['React.js', 'React Native', 'Firebase', 'MongoDB', 'GraphgQL', 'Sripe', 'Revenuecat']}
+                  seeMoreComponent={seeMoreComponent(t('cards.glitch.description'))}
+                  urlSite='https://glitchanimation.com/'
                />
             ]}
          />

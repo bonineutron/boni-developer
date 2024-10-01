@@ -26,6 +26,12 @@
       },
       "simon": {
          "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible. For this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
+      },
+      "fundes": {
+         "description": "This development was for Fundes Latin America, which was looking to update its administration systems at a corporate level, which was a great responsibility, since quality was not negotiable, the smallest detail was worked on within the administrator, where the content is easy to manipulate and guarantees the stability of the system, because the data that will be managed in this system is very important for the operation of the company."
+      },
+      "jrs": {
+         "description": "This development was accompanied by many challenges, it is one of the most complete administrators I have done. The administrator required dynamic tables that all its actions had to communicate with the Backend, since the amount of information to be searched is too extensive, and that could have presented performance problems, which did not exist."
       }
    }
 }
