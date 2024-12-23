@@ -19,19 +19,19 @@
          "description": "Hola, soy desarrollador de software con una experiencia de 3 años creando diferentes tipos de plataformas. A lo largo de estos años tuve que usar una gran variedad de tecnologías, usando desde React y Angular en el Frontend, y en Backend Node y Mysql. En servicios de nube, he usado diferentes herramientas de Aws y Firabase.\nAlgo que he descubierto a lo largo de desarrollar aplicaciones es que me gusta planear, porque me permite prever los posibles problemas que se puedan presentar."
       },
       "glitch": {
-         "description": "Una aplicación de entretenimiento audiovisual, dirigida más que todo a diseñadores o amantes de la animación. En varias ocasiones, mientras ayudaba a desarrollar este proyecto, disfruté uno de estos cortos audiovisuales. El reto más grande que se me presentó fue integrar la pasarela de pago Stripe, un desafío con demasiada responsabilidad que se cumplió de la mejor manera."
+         "description": "Una aplicación de entretenimiento audiovisual, dirigida más que todo a diseñadores o amantes de la animación. En varias ocasiones, mientras ayudaba a desarrollar este proyecto, disfruté uno de estos cortos audiovisuales.\nEl reto más grande que se me presentó fue integrar la pasarela de pago Stripe, un desafío con demasiada responsabilidad que se cumplió de la mejor manera."
       },
       "gepp": {
-         "description": "El primer proyecto hecho completamente desde cero con mis propias manos. Este proyecto consistía en desarrollar rápidamente una plataforma web para una aplicación utilizada por los tenderos de Pepsi en México. Se optó por utilizar React para crear una PWA y consumirla mediante un WebView dentro de la aplicación móvil."
+         "description": "El primer proyecto hecho completamente desde cero con mis propias manos.\nEste proyecto consistía en desarrollar rápidamente una plataforma web para una aplicación utilizada por los tenderos de Pepsi en México. Se optó por utilizar React para crear una PWA y consumirla mediante un WebView dentro de la aplicación móvil."
       },
       "simon": {
-         "description": "Una plataforma de educación, donde el reto más grande era hacer lo más entretenido el consumo de los cursos. Para esto se aplicó un funcionamiento muy parecido al de TikTok, donde se priorizan videos cortos y entretenidos. Disfruté mucho terminando este proyecto, ya que mejoré muchos aspectos como desarrollador."
+         "description": "Una plataforma de educación, donde el reto más grande era hacer lo más entretenido el consumo de los cursos.\nPara esto se aplicó un funcionamiento muy parecido al de TikTok, donde se priorizan videos cortos y entretenidos. Disfruté mucho terminando este proyecto, ya que mejoré muchos aspectos como desarrollador."
       },
       "fundes": {
-         "description": "Este desarrollo fue para Fundes Latinoamérica, que buscaba actualizar sus sistemas de administración a nivel corporativo, lo cual fue una gran responsabilidad, ya que la calidad no era negociable, se trabajó el más mínimo detalle dentro del administrador,donde el contenido sea sencillo de manipular y garantizar la estabilidad del sistema, porque los datos que se administrarán en este sistema son de mucha importancia para la operación de la empresa."
+         "description": "Desarrollé este proyecto para Fundes Latinoamérica, con el objetivo de actualizar sus sistemas de administración corporativa. Este desafío implicó una gran responsabilidad, ya que la calidad era un requisito innegociable.\nSe cuidó cada detalle del administrador, priorizando un diseño intuitivo y fácil de usar, además de garantizar la estabilidad del sistema. Esto fue crucial debido a la relevancia y sensibilidad de los datos gestionados, fundamentales para la operación de la empresa."
       },
       "jrs": {
-         "description": "Este desarrollo estuvo acompañado de muchos retos, es uno de los administradores más completos que he hecho. El administrador exigió tablas dinámicas que todas sus acciones se tenían que comunicar con el Backend, ya que la cantidad de información que se buscaría es demasiado extensa, y eso pudo haber presentado problemas de rendimiento, los cuales no existieron."
+         "description": "Este desarrollo estuvo acompañado de muchos retos, es uno de los administradores más completos que he hecho.\nEl administrador exigió tablas dinámicas que todas sus acciones se tenían que comunicar con el Backend, ya que la cantidad de información que se buscaría es demasiado extensa, y eso pudo haber presentado problemas de rendimiento, los cuales no existieron."
       }
    }
 }

@@ -16,22 +16,22 @@
    },
    "cards": {
       "presentation": {
-         "description": "Hi, I'm a software developer with 3 years of experience creating different types of platforms. Over these years I've had to use a wide variety of technologies, using React and Angular on the Frontend, and Node and Mysql on the Backend. In cloud services, I've used different tools from Aws and Firabase. Something I've discovered throughout developing applications is that I like to plan, because it allows me to foresee possible problems that may arise."
+         "description": "Hi, I'm a software developer with 3 years of experience creating different types of platforms. Over these years I've had to use a wide variety of technologies, using React and Angular on the Frontend, and Node and Mysql on the Backend.\nIn cloud services, I've used different tools from Aws and Firabase. Something I've discovered throughout developing applications is that I like to plan, because it allows me to foresee possible problems that may arise."
       },
       "glitch": {
-         "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts. The biggest challenge that arose for me was integrating the Stripe payment gateway, a task with significant responsibility that was successfully accomplished."
+         "description": "An audiovisual entertainment application, primarily aimed at designers or animation enthusiasts. On several occasions, while assisting in the development of this project, I enjoyed one of these audiovisual shorts.\nThe biggest challenge that arose for me was integrating the Stripe payment gateway, a task with significant responsibility that was successfully accomplished."
       },
       "gepp": {
-         "description": "The first project entirely crafted from scratch with my own hands. This project involved rapidly developing a web platform for an application used by Pepsi retailers in Mexico. The decision was made to use React to build a Progressive Web App (PWA) and consume it through a WebView within the mobile application."
+         "description": "The first project entirely crafted from scratch with my own hands.\nThis project involved rapidly developing a web platform for an application used by Pepsi retailers in Mexico. The decision was made to use React to build a Progressive Web App (PWA) and consume it through a WebView within the mobile application."
       },
       "simon": {
-         "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible. For this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
+         "description": "An education platform, where the biggest challenge was to make the consumption of courses as entertaining as possible.\nFor this, a functionality very similar to TikTok was implemented, prioritizing short and entertaining videos. I enjoyed completing this project very much, as I improved many aspects as a developer."
       },
       "fundes": {
-         "description": "This development was for Fundes Latin America, which was looking to update its administration systems at a corporate level, which was a great responsibility, since quality was not negotiable, the smallest detail was worked on within the administrator, where the content is easy to manipulate and guarantees the stability of the system, because the data that will be managed in this system is very important for the operation of the company."
+         "description": "I developed this project for Fundes Latin America with the goal of updating their corporate management systems. This challenge involved great responsibility, as quality was a non-negotiable requirement.\nEvery detail of the management system was carefully addressed, prioritizing an intuitive and user-friendly design while ensuring system stability. This was crucial due to the importance and sensitivity of the data being managed, which is fundamental to the company's operations."
       },
       "jrs": {
-         "description": "This development was accompanied by many challenges, it is one of the most complete administrators I have done. The administrator required dynamic tables that all its actions had to communicate with the Backend, since the amount of information to be searched is too extensive, and that could have presented performance problems, which did not exist."
+         "description": "This development was accompanied by many challenges, it is one of the most complete administrators I have done.\nThe administrator required dynamic tables that all its actions had to communicate with the Backend, since the amount of information to be searched is too extensive, and that could have presented performance problems, which did not exist."
       }
    }
 }

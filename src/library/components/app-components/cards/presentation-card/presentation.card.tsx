@@ -5,11 +5,11 @@ interface Props {
    title: string;
    position: string;
    description: string;
-   image: string;
+   images: string[];
    seeMoreComponent: JSX.Element;
 }
 
-export function PresentationCard({ title, position, description, seeMoreComponent, image }: Props): JSX.Element {
+export function PresentationCard({ title, position, description, seeMoreComponent, images }: Props): JSX.Element {
    // configuration
    const { t } = useTranslation();
 
@@ -20,12 +20,7 @@ export function PresentationCard({ title, position, description, seeMoreComponen
             <h2 className='text-[30px] font-medium my-2'>{title}</h2>
             <h1 className='italic'>{position}</h1>
          </div>
-         <ImagesTransition
-            images={['images/global/presentation-picture_1.jpeg']}
-            height='180px'
-            width='200px'
-            className='rounded-md'
-         />
+         <ImagesTransition images={images} height='180px' width='200px' className='rounded-md' />
          <SeeMoreInformation paragraph={description} limit={20} children={seeMoreComponent} />
       </div>
    );

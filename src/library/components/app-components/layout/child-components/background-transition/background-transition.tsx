@@ -10,7 +10,7 @@ export function BackgroundTransition(): JSX.Element {
    useEffect(() => {
       setTimeout(() => {
          if (activateBlur.current && background_1.current) {
-            activateBlur.current.classList.add('backdrop-blur-[200px]');
+            activateBlur.current.classList.add('backdrop-blur-[120px]');
             background_1.current.classList.add('opacity-100');
          }
       }, 500);

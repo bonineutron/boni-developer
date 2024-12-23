@@ -45,10 +45,10 @@ export function HomeTemplate() {
 
    const seeMoreComponent = (paragraph: string): JSX.Element => {
       return (
-         <div className='h-full w-full flex items-center'>
+         <div className='h-full w-full flex items-center max-h-[390px] overflow-y-auto'>
             <p className='custom-paragraph'>
                {paragraph.split('\n').map((line, index) => (
-                  <span key={index} style={{ display: 'block', marginBottom: '6px' }}>
+                  <span key={index} style={{ display: 'block', marginBottom: '10px' }}>
                      {line}
                      <br />
                   </span>
@@ -74,7 +74,7 @@ export function HomeTemplate() {
                   title='Andrés Bonilla'
                   position='Full Stack Developer'
                   description={t('cards.presentation.description')}
-                  image='images/global/presentation-picture.jpeg'
+                  images={['images/global/presentation-picture.jpg']}
                   seeMoreComponent={seeMoreComponent(t('cards.presentation.description'))}
                />,
                <ExperienceCard

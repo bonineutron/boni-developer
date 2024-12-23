@@ -17,29 +17,23 @@ export function ContactModal({ setShowContactModal }: Props): JSX.Element {
       <Modal closeClick={setShowContactModal}>
          <div className='flex flex-col gap-[20px]'>
             <a
-               href='https://www.linkedin.com/in/bonineutron/'
+               href='https://www.linkedin.com/in/afbonilladev/'
                target='_blank'
                rel='noopener noreferrer'
                className={optionContact}>
                <FaLinkedin className={iconContact} />
                <span>Linkedin</span>
             </a>
+
             <a
-               href='https://github.com/bonineutron'
-               target='_blank'
-               rel='noopener noreferrer'
-               className={optionContact}>
-               <FaGithub className={iconContact} />
-               <span>Github</span>
-            </a>
-            <a
-               href='mailto:mailofbonilla@gmail.com'
+               href='mailto:bonillacorreo@gmail.com'
                target='_blank'
                rel='noopener noreferrer'
                className={optionContact}>
                <RiMailSendFill className={iconContact} />
                <span>Email</span>
             </a>
+
             <a
                href='https://api.whatsapp.com/send?phone=573203604288'
                target='_blank'
